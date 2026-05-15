@@ -42,10 +42,11 @@ export function Footer() {
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-md space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="rounded-xl bg-cream p-2 shadow-md ring-1 ring-white/10">
-                <LogoImage className="!h-9 w-auto sm:!h-10" />
-              </div>
+            <div className="flex items-center">
+              <LogoImage
+                knockOutWhite
+                className="!h-8 max-w-[180px] opacity-95 sm:!h-9 sm:max-w-[200px]"
+              />
             </div>
             <p className="font-serif text-xl text-cream">
               Interior décor in PVC—panels, marble-look finishes, and the quiet details that make walls feel finished.
@@ -86,7 +87,7 @@ export function Footer() {
         </div>
         <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-8 font-sans text-xs text-cream/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {siteConfig.name}. {siteConfig.serviceArea}.
+            © {new Date().getFullYear()} · {siteConfig.serviceArea}.
           </p>
           <Link
             href="/contact"

@@ -82,8 +82,12 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-20 pt-12 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:pt-16">
         <div className="max-w-xl lg:flex-1">
-          <div className="mb-8 rounded-2xl bg-cream/90 px-4 py-4 shadow-lg shadow-ink/10 ring-1 ring-gold/20 backdrop-blur-sm sm:px-5 sm:py-5">
-            <LogoImage priority className="!h-20 max-w-[min(100%,320px)] sm:!h-24" />
+          <div className="mb-6 w-fit">
+            <LogoImage
+              priority
+              knockOutWhite
+              className="!h-10 max-w-[min(100%,240px)] sm:!h-11"
+            />
           </div>
           <p className="font-sans text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-gold">
             North Macedonia · Interior décor
@@ -95,9 +99,9 @@ export function Hero() {
             {siteConfig.sloganAlt}
           </p>
           <p className="mt-6 max-w-prose font-sans text-base leading-relaxed text-ink/80">
-            CASA DECOR supplies PVC wall panels and marble-effect finishes for
-            interiors that should feel considered—quality materials, honest
-            pricing, and categories you can understand at a glance.
+            We supply PVC wall panels and marble-effect finishes for interiors
+            that should feel considered—quality materials, honest pricing, and
+            categories you can understand at a glance.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -124,7 +128,7 @@ export function Hero() {
           >
             <Image
               src={HERO_PANEL}
-              alt="Modern large-format wall tiles with soft veining — CASA DECOR feature wall"
+              alt="Modern large-format wall tiles with soft veining"
               fill
               priority
               quality={92}

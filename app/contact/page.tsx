@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact ${siteConfig.name} in ${siteConfig.serviceArea}.`,
+  description: `Contact us in ${siteConfig.serviceArea}.`,
 };
 
 function InfoRow({
@@ -35,7 +35,7 @@ export default function ContactPage() {
             Contact
           </p>
           <h1 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">
-            Reach the CASA DECOR team
+            Reach our team
           </h1>
           <p className="mt-5 font-sans text-base leading-relaxed text-ink/75">
             We keep contact simple for v1—no forms or analytics yet. Use email,

@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/siteConfig";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "CASA DECOR supplies quality PVC wall panels and marble-effect décor across North Macedonia at fair prices.",
+    "Quality PVC wall panels and marble-effect décor across North Macedonia at fair prices.",
 };
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <Reveal delay={0.06}>
         <div className="mt-10 space-y-6 font-sans text-base leading-relaxed text-ink/80">
           <p>
-            CASA DECOR focuses on a tight range of interior finishes: PVC wall
+            We focus on a tight range of interior finishes: PVC wall
             panels, marble-effect surfaces, and the trims that make an
             installation feel complete. We are not trying to be a noisy
             marketplace; we want visitors to understand what we sell in a single

@@ -6,7 +6,7 @@ import { galleryItems } from "@/lib/gallery";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Placeholder project gallery for CASA DECOR—swap photography when your install portfolio is ready.",
+    "Placeholder project gallery—swap photography when your install portfolio is ready.",
 };
 
 export default function GalleryPage() {

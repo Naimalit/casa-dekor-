@@ -1,22 +1,27 @@
 import Image from "next/image";
 
-/** Served from /public/logo.png. `unoptimized` keeps the original PNG bytes (avoids rare `next/image` + PNG issues on some hosts). */
+type Props = {
+  className?: string;
+  priority?: boolean;
+  /** Knocks out flat white in many PNGs so the scene behind reads through (hero/footer). */
+  knockOutWhite?: boolean;
+};
+
+/** Served from /public/logo.png. `unoptimized` serves bytes as stored (reliable on all hosts). */
 export function LogoImage({
   className = "",
   priority = false,
-}: {
-  className?: string;
-  priority?: boolean;
-}) {
+  knockOutWhite = false,
+}: Props) {
   return (
     <Image
       src="/logo.png"
-      alt="CASA DECOR"
+      alt=""
       width={548}
       height={455}
       unoptimized
       priority={priority}
-      className={`h-12 w-auto max-w-[min(100%,280px)] object-contain object-left sm:h-14 ${className}`}
+      className={`h-9 w-auto max-w-[200px] object-contain object-left sm:h-10 sm:max-w-[220px] ${knockOutWhite ? "mix-blend-multiply" : ""} ${className}`}
     />
   );
 }

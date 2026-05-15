@@ -6,7 +6,7 @@ import { collections } from "@/lib/collections";
 export const metadata: Metadata = {
   title: "Collections",
   description:
-    "Browse CASA DECOR collections: PVC wall panels, marble-effect décor, and coordinating finishes.",
+    "Browse collections: PVC wall panels, marble-effect décor, and coordinating finishes.",
 };
 
 export default function CollectionsPage() {

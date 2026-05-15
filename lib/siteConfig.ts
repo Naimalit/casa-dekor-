@@ -1,5 +1,4 @@
 export const siteConfig = {
-  name: "CASA DECOR",
   slogan: "Premium panels. Honest prices.",
   sloganAlt: "Marble looks. Walls that last.",
 

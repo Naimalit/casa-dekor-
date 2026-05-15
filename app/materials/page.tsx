@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Materials",
   description:
-    "PVC wall and ceiling materials at CASA DECOR—benefits, marble-effect finishes, suggested rooms, and honest maintenance notes.",
+    "PVC wall and ceiling materials—benefits, marble-effect finishes, suggested rooms, and honest maintenance notes.",
 };
 
 const blocks = [

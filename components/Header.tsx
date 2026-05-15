@@ -60,10 +60,11 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
-          className="flex min-w-0 shrink-0 items-center gap-3"
+          aria-label="Home"
+          className="flex min-w-0 shrink-0 items-center"
           prefetch={false}
         >
-          <LogoImage priority />
+          <LogoImage priority knockOutWhite />
         </Link>
 
         <div className="flex items-center gap-4 md:gap-6">

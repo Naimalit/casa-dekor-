@@ -33,7 +33,7 @@ export default function HomePage() {
               What we offer
             </p>
             <h2 className="mt-4 font-serif text-3xl text-ink sm:text-4xl">
-              Three clear reasons people choose CASA DECOR
+              Three clear reasons people choose us
             </h2>
           </div>
         </Reveal>

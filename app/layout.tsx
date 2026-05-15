@@ -20,13 +20,13 @@ const sans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} · ${siteConfig.slogan}`,
-    template: `%s · ${siteConfig.name}`,
+    default: siteConfig.slogan,
+    template: `%s · ${siteConfig.slogan}`,
   },
   description:
-    "CASA DECOR supplies PVC wall panels and marble-effect interior finishes in North Macedonia—premium materials at honest prices.",
+    "PVC wall panels and marble-effect interior finishes in North Macedonia—premium materials at honest prices.",
   openGraph: {
-    title: `${siteConfig.name} · ${siteConfig.slogan}`,
+    title: siteConfig.slogan,
     description:
       "PVC wall panels and marble-look décor for refined interiors. Serving North Macedonia.",
     type: "website",
