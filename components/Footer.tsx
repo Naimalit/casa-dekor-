@@ -43,7 +43,9 @@ export function Footer() {
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-md space-y-4">
             <div className="flex items-center gap-3">
-              <LogoImage className="brightness-0 invert" />
+              <div className="rounded-xl bg-cream p-2 shadow-md ring-1 ring-white/10">
+                <LogoImage className="!h-9 w-auto sm:!h-10" />
+              </div>
             </div>
             <p className="font-serif text-xl text-cream">
               Interior décor in PVC—panels, marble-look finishes, and the quiet details that make walls feel finished.

@@ -9,11 +9,11 @@ export function LogoImage({
 }) {
   return (
     <Image
-      src="/logo.jpg"
+      src="/logo.png"
       alt="CASA DECOR"
-      width={160}
-      height={48}
-      className={`h-10 w-auto object-contain ${className}`}
+      width={548}
+      height={455}
+      className={`h-10 w-auto object-contain sm:h-11 ${className}`}
       priority={priority}
     />
   );
