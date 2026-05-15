@@ -80,17 +80,17 @@ export function LanguageSwitcher() {
         strategy="afterInteractive"
       />
 
-      <div className="relative">
+      <div className="relative shrink-0">
         <button
           type="button"
           aria-expanded={open}
           aria-haspopup="listbox"
-          aria-label="Translate page — current language"
+          aria-label={`Translate page — ${current.label} (${current.short})`}
+          title={`Language: ${current.label}`}
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-9 items-center gap-1.5 rounded-full border border-ink/15 bg-cream/60 px-2.5 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-ink/80 transition hover:border-gold/40 hover:text-gold"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-ink/15 text-ink/75 transition hover:border-gold/40 hover:text-gold"
         >
-          <GlobeIcon className="h-3.5 w-3.5 shrink-0 opacity-80" aria-hidden />
-          <span className="min-w-[1.5rem] text-center">{current.short}</span>
+          <GlobeIcon className="h-[17px] w-[17px] shrink-0" aria-hidden />
         </button>
 
         {open && (

@@ -28,7 +28,7 @@ function HeaderSocialIcon({
 
 function SocialButtons() {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex shrink-0 items-center gap-2">
       <HeaderSocialIcon href={siteConfig.social.facebook} label="Facebook">
         <svg
           width="17"
@@ -51,6 +51,7 @@ function SocialButtons() {
           <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8zM12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm5.5-3.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
         </svg>
       </HeaderSocialIcon>
+      <LanguageSwitcher />
     </div>
   );
 }
@@ -68,11 +69,8 @@ export function Header() {
           <LogoImage priority />
         </Link>
 
-        <div className="flex items-center gap-4 md:gap-6">
-          <div className="flex items-center gap-2 md:gap-3">
-            <SocialButtons />
-            <LanguageSwitcher />
-          </div>
+        <div className="flex min-w-0 items-center gap-4 md:gap-6">
+          <SocialButtons />
 
           <nav
             aria-label="Primary"
