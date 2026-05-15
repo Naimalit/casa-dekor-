@@ -58,11 +58,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-cream-deep/60 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex min-w-0 items-center gap-3" prefetch={false}>
+        <Link
+          href="/"
+          className="flex min-w-0 shrink-0 items-center gap-3"
+          prefetch={false}
+        >
           <LogoImage priority />
-          <span className="hidden font-sans text-xs font-medium uppercase tracking-[0.28em] text-ink sm:inline">
-            {siteConfig.name.replace(/ /g, "\u00a0")}
-          </span>
         </Link>
 
         <div className="flex items-center gap-4 md:gap-6">
