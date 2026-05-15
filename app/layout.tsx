@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { GoogleTranslateUiCleanup } from "@/components/GoogleTranslateUiCleanup";
+import { Header } from "@/components/Header";
 import { siteConfig } from "@/lib/siteConfig";
 
 const serif = Playfair_Display({
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body className="min-h-screen flex flex-col">
+        <GoogleTranslateUiCleanup />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -67,7 +67,8 @@ export function LanguageSwitcher() {
                 {
                   pageLanguage: 'en',
                   includedLanguages: 'en,sq,mk',
-                  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                  layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                  autoDisplay: false
                 },
                 'google_translate_element'
               );

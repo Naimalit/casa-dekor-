@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  margin-top: 0 !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -15,13 +16,34 @@ html {
 body {
   @apply bg-cream font-sans text-ink antialiased;
   top: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  position: relative !important;
 }
 
 ::selection {
   background: rgba(154, 123, 79, 0.25);
 }
 
-/* Google Translate: hide top promo iframe gap */
-iframe.goog-te-banner-frame {
+/* Google Translate injects a top banner iframe — hide it (translation still runs on DOM) */
+iframe.goog-te-banner-frame,
+iframe.goog-te-banner-frame.skiptranslate {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  border: none !important;
+}
+
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
 }
