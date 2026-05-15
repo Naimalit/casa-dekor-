@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { navLinks, siteConfig } from "@/lib/siteConfig";
 import { LogoImage } from "@/components/LogoImage";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 function HeaderSocialIcon({
   href,
@@ -68,7 +69,10 @@ export function Header() {
         </Link>
 
         <div className="flex items-center gap-4 md:gap-6">
-          <SocialButtons />
+          <div className="flex items-center gap-2 md:gap-3">
+            <SocialButtons />
+            <LanguageSwitcher />
+          </div>
 
           <nav
             aria-label="Primary"

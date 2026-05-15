@@ -14,8 +14,14 @@ html {
 
 body {
   @apply bg-cream font-sans text-ink antialiased;
+  top: 0 !important;
 }
 
 ::selection {
   background: rgba(154, 123, 79, 0.25);
+}
+
+/* Google Translate: hide top promo iframe gap */
+iframe.goog-te-banner-frame {
+  display: none !important;
 }
