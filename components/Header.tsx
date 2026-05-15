@@ -64,7 +64,7 @@ export function Header() {
           className="flex min-w-0 shrink-0 items-center"
           prefetch={false}
         >
-          <LogoImage priority knockOutWhite />
+          <LogoImage priority />
         </Link>
 
         <div className="flex items-center gap-4 md:gap-6">

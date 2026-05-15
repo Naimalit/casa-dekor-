@@ -9,7 +9,6 @@ import {
   useTransform,
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { LogoImage } from "@/components/LogoImage";
 import { siteConfig } from "@/lib/siteConfig";
 
 /** Brand imagery — modern large-format wall tiles (see `public/decor-tile-hero.png`). */
@@ -82,13 +81,6 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-20 pt-12 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:pt-16">
         <div className="max-w-xl lg:flex-1">
-          <div className="mb-6 w-fit">
-            <LogoImage
-              priority
-              knockOutWhite
-              className="!h-10 max-w-[min(100%,240px)] sm:!h-11"
-            />
-          </div>
           <p className="font-sans text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-gold">
             North Macedonia · Interior décor
           </p>
